@@ -2,6 +2,7 @@ import React from 'react'
 import Title from '../Title'
 import styles from '../../css/about.module.css'
 import img from '../../images/defaultBcg.jpeg'
+import { Link } from 'gatsby'
 
 const About = () => {
     return (
@@ -19,7 +20,8 @@ const About = () => {
                     Aute incididunt nisi magna qui sint quis.</p>
                     <p>Adipisicing sit id officia veniam culpa.
                     Aute incididunt nisi magna qui sint quis.</p>
-                    <button type="button" className="btn-primary">Read More</button>
+                    {/* <a href="/blog" type="button" className="btn-primary">Read More</a> */}
+                    <Link to="/blog" className="btn-primary">Read More</Link>
                 </article>
             </div>
         </section>
@@ -27,3 +29,4 @@ const About = () => {
 }
 
 export default About
+ 

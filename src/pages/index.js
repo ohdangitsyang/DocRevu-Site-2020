@@ -9,9 +9,9 @@ import Services from '../components/Home/Services'
 export default () => (
   <Layout>
     <SimpleHero>
-      <Banner title="continue exploring" 
+      <Banner title="simple e-discovery" 
               info="Elit eiusmod do aute voluptate et aliqua esse officia ex laboris consequat in.">        
-        <Link to="/tours" className="btn-white">Explore Tours</Link>
+        <Link to="/products" className="btn-white">Explore Products</Link>
       </Banner>
     </SimpleHero>
     <About />
