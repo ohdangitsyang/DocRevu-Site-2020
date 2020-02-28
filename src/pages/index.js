@@ -1,10 +1,11 @@
 import React from "react"
-import { Link, graphql } from 'gatsby'
-import Layout from "../components/Layout"
+import { graphql } from 'gatsby'
 import StyledHero from '../components/StyledHero'
+import Layout from "../components/Layout"
 import Banner from '../components/Banner'
 import About from '../components/Home/About'
 import Services from '../components/Home/Services'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 export default ({data}) => (
 
@@ -15,7 +16,7 @@ export default ({data}) => (
         title="simple e-discovery" 
         info="Elit eiusmod do aute voluptate et aliqua esse officia ex laboris consequat in."
       >        
-        <Link to="/products" className="btn-white">Explore Products</Link>
+        <AniLink fade to="/products" className="btn-white">Explore Products</AniLink>
       </Banner>
     </StyledHero>
     <About />
