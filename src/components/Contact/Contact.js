@@ -7,8 +7,13 @@ const Contact = () => {
         <section className={styles.contact}>
             <Title title="contact" subtitle="us" />
             <div className={styles.center}>
-                <form className={styles.form}>
+                <form 
+                    action="https://formspree.io/ohdangitsyang@gmail.com"
+                    method="POST"
+                    className={styles.form}
+                >
                     <div>
+                        <label htmlFor="name">Name</label>
                         <input 
                             type="text" 
                             name="name" 
@@ -18,6 +23,7 @@ const Contact = () => {
                         />
                     </div>
                     <div>
+                        <label htmlFor="email">Email</label>
                         <input 
                             type="email" 
                             name="email" 
@@ -27,6 +33,7 @@ const Contact = () => {
                         />
                     </div>
                     <div>
+                        <label htmlFor="mssage">Message</label>
                         <textarea 
                             type="message" 
                             name="message" 
